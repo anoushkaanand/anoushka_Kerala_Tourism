@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(236, 253, 236);
+}
+
+.continfo{
+    text-align: center;
+}
+input[type=text],textarea,[type=email],[type=number]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  color:seagreen;
+  padding: 12px 20px;
+  border-color:seagreen;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:palegreen;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#mainNavbar .navbar-brand {
+    color:white;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,21 @@
+#header {
+    background: url("kerala.png");
+    background-color: rgb(216, 255, 216);
+}
+.display-3{
+    color:black;
+    font-weight:500;
+}
+.lead{
+    color:chartreuse;
+    font-weight:500;
+}
+
+
+#mainNavbar .navbar-brand {
+    color:white;
+    font-size: 1.5rem;
+}
+body{
+    background-color: rgb(236, 253, 236);
+}

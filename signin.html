@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <title>KT-Sign Up</title>
+    <link rel="stylesheet" href="signin.css">
+  </head>
+  <body>
+    <nav id="mainNavbar" class="navbar bg-dark navbar-dark navbar-expand-md py-0 fixed-top">
+      <a href="index.html" class="navbar-brand"><i class="fa fa-suitcase"></i> Yatra @ Kerala</a>
+      <div class="collapse navbar-collapse" id="navLinks">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a href="district.html" class="nav-link">District Page</a>
+              </li>
+              <li class="nav-item">
+                  <a href="log.html" class="nav-link">Login</a>
+              </li>
+              <li class="nav-item">
+                  <a href="contact.html" class="nav-link">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        List Districts
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="alappuzha.html">Alappuzha</a>
+                          <a class="dropdown-item" href="ernakulam.html">Ernakulam</a>
+                          <a class="dropdown-item" href="idukki.html">Idukki</a>
+                          <a class="dropdown-item" href="kannur.html">Kannur</a>
+                          <a class="dropdown-item" href="kasargod.html">Kasaragod</a>
+                          <a class="dropdown-item" href="kollam.html">Kollam</a>
+                          <a class="dropdown-item" href="kottayam.html">Kottayam</a>
+                          <a class="dropdown-item" href="kozhikode.html">Kozhikode</a>
+                          <a class="dropdown-item" href="malappuram.html">Malappuram</a>
+                          <a class="dropdown-item" href="palakkad.html">Palakkad</a>
+                          <a class="dropdown-item" href="pathanam.html">Pathanamthitta</a>
+                          <a class="dropdown-item" href="thrissur.html">Thrissur</a>
+                          <a class="dropdown-item" href="tvm.html">Thiruvananthapuram</a>
+                          <a class="dropdown-item" href="wayanad.html">Wayanad</a>
+                      </div>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <br>
+
+  <div class="content">
+    <div class="container">
+      <h2 class="text-center display" >Sign Up</h2>
+      <h6 class="text-center display">Wanna make it quick?</h6>
+      <h6 class="text-center display">Just sign in with:</h6>
+      <br>
+      <a id="face" href="http://facebook.com" class="btn btn-outline-primary btn-sm"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a id="google" href="https://accounts.google.com/servicelogin" class="btn btn-outline-danger btn-sm"><i class="fab fa-google-plus-g"></i> Google</a>
+        <br><br>
+        <p style="text-align:center"> OR  </p>
+      <h6 class="text-center display">Please fill up the form to create an account!</h6>
+      <hr>
+      
+      <form action="" name="form1">
+        <br>
+        <input type="text" id="name" class="form-control" placeholder="Complete Name" required><br>
+        <input type="text" id="Username" class="form-control" placeholder="Username" required><br>
+        <input type="text" id="email" name="email" onkeyup="ValidateEmail(document.form1.email)" class="form-control" placeholder="Email Address" required>
+        <label for="error" id="error"></label><br>
+        <input type="text" id="phone" onkeyup="phonenumber(document.form1.phone)" name="phone" class="form-control" placeholder="Phone Number" required>
+        <label for="en" id="en"></label><br>
+        <div class="field">
+          <input id="password" onkeyup="trigger()" type="password" placeholder="Type password" required>
+          <span class="showBtn">SHOW</span>
+        </div>
+        <div class="indicator">
+          <span class="weak"></span>
+          <span class="medium"></span>
+          <span class="strong"></span>
+        </div>
+        <div class="text"></div>
+        <br>
+        <input type="password" name="pswr" class="form-control" placeholder="Repeat-Password" required>
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+      
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      
+        <div class="text-center">
+            <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+    <script src="signin.js"></script>
+
+  </body>
+</html>
