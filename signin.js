@@ -10,7 +10,7 @@ const phone = document.querySelector("phone");
 const rpass = document.querySelector("#rpsw");
 let regExpWeak = /[a-z]/;
 let regExpMedium = /\d+/;
-let regExpStrong = /.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/;
+let regExpStrong = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
 function repass()
 {
   var rp = document.getElementById("rp");
