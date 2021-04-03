@@ -7,9 +7,26 @@ const text = document.querySelector(".text");
 const showBtn = document.querySelector(".showBtn");
 const mail = document.querySelector("email");
 const phone = document.querySelector("phone");
+const rpass = document.querySelector("#rpsw");
 let regExpWeak = /[a-z]/;
 let regExpMedium = /\d+/;
 let regExpStrong = /.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/;
+function repass()
+{
+  var rp = document.getElementById("rp");
+  if(input.value == rpass.value)
+  {
+    rp.innerHTML = "Password Match";
+    rp.style.color = "green"; 
+    return true;
+  }
+  else
+  {
+    rp.innerHTML = "Password Do Not Match";
+    rp.style.color = "red"; 
+    return false;
+  }
+}
 function phonenumber(input1)
 {
   var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
